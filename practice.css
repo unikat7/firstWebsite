@@ -1,0 +1,444 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+.header {
+    height: 80px;
+    display: flex;
+}
+
+.logo {
+    width: 60px;
+    height: 80px;
+}
+
+.logo img {
+    height: 90px;
+}
+
+
+.name {
+    position: relative;
+    left: 10px;
+}
+
+.name p {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 5px;
+
+}
+
+.phone {
+    position: relative;
+    left: 1100px;
+    top: 15px;
+    height: 50px;
+
+}
+
+.phone button {
+    border-radius: 20%;
+    padding: 10px;
+    font-size: large;
+    box-shadow: 2px 3px 40px green;
+    animation-name: shadow;
+    animation-duration: 2s;
+    animation-delay: 0.25s;
+    animation-iteration-count: infinite;
+}
+
+.phone button a {
+    text-decoration: none;
+    color: darkgreen;
+    font-weight: bold;
+}
+
+@keyframes shadow {
+    from {
+        box-shadow: 2px 3px 100px green;
+    }
+
+    to {
+        box-shadwo: 2px 3px 50px lightgreen;
+    }
+}
+
+.navbar {
+    /* position: relative;
+    top: 10px;
+    height: 50px; */
+    border: 2px solid blue;
+    background-color: green;
+    padding: 20px 0;
+    position: sticky;
+    top:0;
+    z-index:999;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    /* position: relative;
+    top: 10px; */
+
+}
+
+.navbar nav ul a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar nav ul a:hover {
+    color: grey;
+}
+
+.navbar nav ul li {
+    /* position: relative;
+    top: 5px; */
+
+}
+
+.navbar nav ul li:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+#dropdown{
+    position: relative;
+}
+
+#dropdown:hover #dropdown-content{
+    opacity: 1;
+}
+
+
+
+
+
+#dropdown-content {
+    position: absolute;
+    top: 22px;
+    left: 0;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 15px;
+    z-index: 9999;
+    opacity: 0;
+}
+
+#dropdown-content a {
+    color: black;
+}
+
+.image {
+    height: 585px;
+    position: relative;
+    top: 10px;
+    background-image: url(ludge.webp);
+    background-position: center;
+    background-size: cover;
+    animation-name: imageslider;
+    animation-duration: 15s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes imageslider {
+
+    0%,
+    100% {
+        background-image: url(ludge.webp);
+    }
+
+    25% {
+        background-image: url(photo/oh.jpg);
+    }
+
+    75% {
+        background-image: url(photo/oh2.jpg);
+    }
+
+}
+
+.paragraph {
+    height: 50px;
+    position: absolute;
+    top: 40px;
+    width: 320x;
+    left: 20px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    color: white;
+    line-height: 25px;
+}
+
+.topdestination {
+    height: 10px;
+    position: relative;
+    top: 30px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    row-gap: 40px;
+    column-gap: 40px;
+    padding: 40px 40px 30px 30px;
+    background-color: lightblue;
+}
+
+.country {
+    height: 200px;
+    width: 300px;
+    border: 2px solid red;
+    position: relative;
+    top: 30px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.country:hover {
+    transform: scale(1.1);
+}
+
+h3 {
+    text-align: center;
+    position: relative;
+    top: 20px;
+    letter-spacing: 5px;
+    color: blue;
+}
+
+.Canada {
+    background-image: url(country/canada.jpg);
+}
+
+.Japan {
+    background-image: url(country/japanarko.webp);
+}
+
+.Uk {
+    background-image: url(country/uk1.jpg);
+}
+
+.hungary {
+    background-image: url(country/hungary.jpg);
+}
+
+.Norway {
+    background-image: url(country/flag-of-norway.webp);
+}
+
+.USA {
+    background-image: url(country/UsA.jpg);
+}
+
+.Korea {
+    background-image: url(country/aus.jpg);
+}
+
+.Australia {
+    background-image: url(country/korea.jpg);
+}
+
+.country a {
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+    font-size: 25px;
+    text-decoration: none;
+
+    color: black;
+}
+
+.programs {
+    height: 600px;
+    position: relative;
+    top: 100px;
+}
+
+.heading {
+    font-size: 15px;
+    width: 200px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 5px;
+}
+
+.heading h3 {
+    text-align: center;
+    color: blue;
+    position: relative;
+    top: 5px;
+    width: 500px;
+    text-align: center;
+    right: 180px;
+    letter-spacing: 10px;
+    font-size: 20px;
+}
+
+.pro {
+    margin: 20px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    justify-content: center;
+    column-gap: 5px;
+    row-gap: 5px;
+}
+
+.pro1 {
+    border: 2px solid blueviolet;
+    margin: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+
+.nursing {
+    background-image: url(photo/nursing.jpg);
+}
+
+.diploma {
+    background-image: url(photo/diploma.jpg);
+}
+
+.bachelors {
+    background-image: url(photo/bachelors.jpg);
+}
+
+.phd {
+    background-image: url(photo/phd.jpg);
+}
+
+.masters {
+    background-image: url(photo/masters.jpg);
+}
+
+.medical {
+    background-image: url(photo/doctors.jpg);
+}
+
+.pro1 p {
+    position: relative;
+    top: 210px;
+    left: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.contact {
+    height: 700px;
+    position: relative;
+    top: 100px;
+    background-image: url(country/udyo.png);
+    background-position: center;
+}
+
+.form {
+    border: 2px solid blue;
+    width: 500px;
+    height: 600px;
+    position: relative;
+    left: 50px;
+    top: 30px;
+    border-radius: 20px;
+}
+
+.contact h1 {
+    position: relative;
+    left: 30px;
+    color: blueviolet;
+}
+
+form input {
+    display: block;
+    text-align: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    padding: 20px;
+    width: 300px;
+    border-radius: 12px;
+    /* border:2px solid blueviolet; */
+    outline: none;
+    background-color: transparent;
+    border: 2px solid grey;
+}
+
+.text {
+    position: relative;
+    left: 80px;
+    top: 30px;
+    border-radius: 10px;
+    width: 345px;
+    height: 80px;
+    background-color: skyblue;
+    border: none;
+    resize: none;
+    outline: none;
+    text-align: center;
+    background-color: transparent;
+    border: 2px solid grey;
+    /* border:2px solid blueviolet; */
+}
+
+.button {
+    position: relative;
+    top: 50px;
+    width: 450px;
+    right: 0px;
+    left: 20px;
+    border: none;
+    background-color: aqua;
+    border-radius: 10px;
+    height: 50px;
+    font-weight: bold;
+    border: 2px solid blueviolet;
+}
+
+::placeholder {
+    color: black;
+    font-weight: 2px;
+}
+
+.footer {
+    height: 500px;
+    position: relative;
+    top: 100px;
+    background-color: slateblue;
+}
+
+.desc {
+    width: 60%;
+    height: 50px;
+    color: black;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+.medias {
+    position: relative;
+    top: 100px;
+    color: white;
+    font-weight: bold;
+}
+
+.fa-brands {
+    color: black;
+}
+
+.copyright {
+    border: 2px solid red;
+    font-weight: bold;
+    align-items: center;
+}

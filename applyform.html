@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>applyform</title>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+        body{
+            background-color: bisque;
+        }
+        .form{
+            height:500px;
+            width:500px;
+            position:relative;
+            left:500px;
+            top:5px;
+            background-color: aquamarine;
+        }
+        h1{
+            color:blueviolet;
+            position:relative;
+            left:500px;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Applicant's Form</h1>
+    <form action="applyformdata.php" method="post" class="form">
+        <label for="name">Name</label><br>
+        <input type="text" name="name" required><br>
+        <label for="education qualification" max=20 min=10 name="qualification">Qualification</label><br>
+        <input type="text" name="education"><br>
+        <label for="intended country">Intended Country</label><br>
+        <input type="text" name="country" required><br>
+        <label for="phonenumber">phonenumber</label><br>
+        <input type="number" name="phonenumber" required><br>
+        <label for="">Attach Your Related Education Certificates:</label>
+        <input type="file" name="file" required>
+        </label><br>
+        <br>
+        <input type="submit" name="submit">
+        
+
+         
+    </form>
+</body>
+</html>

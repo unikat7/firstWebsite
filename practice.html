@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!-- git hub: git hub repository,  -->
+<!-- need to visualized overall system theoritically first, user, admin, function, contents,  -->
+<!-- React, Material uI -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaraswatiNagar</title>
+    <link rel="stylesheet" href="practice.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-XJpfvpDgXTBnqbgJXfCcEXCrPUpoDAB9rAAfjj2kO5dFC4luE8f4mX5j2zgEoCIZUzRnOu9QuN2L2nv5CvKvug==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="sarswati.jpg">
+        </div>
+        <div class="name">
+            <p style="color:darkgreen">Sarswatinagar</p>
+            <p><span style="color:blue;">Institute</span></p>
+        </div>
+        <div class="phone">
+            <!--  need to add apply now form, need to connect respective form with db using php script -->
+            <!-- need to make admin user, who is able to view all the applied form, contact us table data as well -->
+            <button><a href="applyform.html">Apply Now</a></button>
+        </div>
+    </div>
+    <div class="navbar">
+        <nav>
+            <ul>
+                <!-- try to use sub menu in courses menu, add link for each menu and submenu -->
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <div id="dropdown"><a href="#">Courses</a> 
+                <div id="dropdown-content">
+                    <a href="usa.html">ILETS</a>
+                    <a href="#">PTE</a>
+                    <a href="#">Japenese</a>
+                </div>
+                </div>
+                <li><a href="#">Branches</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="image">
+        <div class="paragraph">
+            Start Your Abroad Career With Us!<br>
+            We Are Here To Guide You
+        </div>
+    </div>
+    <h3>Top Destination</h3>
+    <div class="topdestination">
+        <!-- image mapping -->
+        <!-- try to add review for each destination,  as well as add rating option if possible -->
+        <!-- option: any one abale to comments, or user able to comments -->
+         <div class="country Canada">
+            <a href="Canada.html">Canada</a>
+         </div>
+         <div class="country USA">
+            <a href="usa.html">USA</a>
+         </div>
+         <div class="country Japan">
+            <a href="Japan.html">Japan</a>
+         </div>
+         <div class="country Uk">
+            <a href="uk.html">Uk</a>
+         </div>
+         <div class="country hungary">
+            <a href="hungary.html">Hungary</a>
+         </div>
+         <div class="country Norway">
+            <a href="norway.html">Norway</a>
+         </div>
+         <div class="country Korea">
+            <a href="australia.html">Australia</a>
+         </div>
+         <div class="country Australia">
+            <a href="korea.html">Korea</a>
+         </div>
+    </div>
+    <div class="programs">
+        <div class="heading">
+            <h3>what we offer?</h3>
+            <!-- add nevigation link here too -->
+        </div>
+        <div class="pro">
+            <div class="pro1 nursing">
+                <p>Nursing</p>
+            </div>
+            <div class="pro1 diploma">
+                <p>Diploma</p>
+            </div>
+            <div class="pro1 bachelors">
+                <p>Bachelors Degree</p>
+            </div>
+            <div class="pro1 phd">
+                <p>PHD</p>
+            </div>
+            <div class="pro1 masters">
+                <p>Masters Degree</p>
+            </div>
+            <div class="pro1 medical">
+                <p>Medical Science</p>
+            </div>
+        </div>
+    </div>
+    <div class="contact">
+        <!-- try to conect with backend using php  script, need to create db, table in the mysql server -->
+        <h1>Contact Us</h1>
+        <div class="form">
+            <form action="contact.php" method="post">
+                <input type="text" placeholder="Enter Your Name:"  name="name"required>
+                <input type="email" placeholder="Email id" name="email"required>
+                <input type="number" placeholder="PhoneNumber" name="phonenumber" required>
+                <textarea class="text" placeholder="Leave Your Message......" name="message"></textarea>
+                <button class="button" name="sbbutton">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        
+         <img src="sarswati.jpg"style="height:80px;positio:relative;top:20px;" > 
+         <p style="display: inline-block; position:relative;bottom:30px;color:black;font-weight: bold;">Sarswatinagar <br>Institute</p>
+         <p class="desc">Saraswatinagar Institute has been serving as an esteemed abroad consultant for a considerable duration, assisting numerous individuals in realizing their dreams of studying or settling abroad. With a rich history of dedication and expertise, we have earned the trust of our clients through our commitment to excellence and personalized service.</p>
+         <div class="medias">Visit Us at
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+         </div>
+         <div class="copyright">
+           <p>&copy;  all rights preserved by uniqueaM</p>
+         </div>
+    </div>
+  
+</body>
+</html>
